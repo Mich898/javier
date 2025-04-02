@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color</title>
+</head>
+<body>
+    <h1>Seleccionar un Color</h1>
+    <input type="color" name="color" id="color">
+    <p>Color seleccionado: <span id="demo"></span></p>
+    <script>
+        document.getElementById("color").addEventListener("input", function() {
+            document.getElementById("demo").innerText = this.value;
+        });
+    </script>
+</body>
+</html>
