@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico en Canvas</title>
+</head>
+<body>
+    <h1>Gráfico Simple en Canvas</h1>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid black;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(50, 50, 200, 100);
+
+        ctx.beginPath();
+        ctx.arc(150, 200, 50, 0, Math.PI * 2);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+    </script>
+</body>
+</html>
